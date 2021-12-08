@@ -11,14 +11,15 @@ console.log ('random number: ' + randomNumber);*/
 // ****************************************************TASK 1****************************************************
 
 
-let counter = 1
+//let counter = 1
 
-const randomNumber = Math.round(Math.random() * 10);
 for (let counter = 1; counter<= 10; counter++) {
-counter = counter + 1;
+const randomNumber = Math.round(Math.random() * 10);
+console.log(randomNumber)
 }
 
-console.log ('random number:' + randomNumber);
+
+//console.log ('random number:' + randomNumber);
 
 
 
