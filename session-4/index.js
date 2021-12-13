@@ -37,6 +37,19 @@ const personB = {
 
 //*console.log(personA);
 
+function whoIsOlder(A, B) {
+    const personAIsOlder = A.Age > B.Age;
+    console.log(personAIsOlder); // true
+    const resultPersonAIsOlder = A.Name + " is older than " + B.Name + " by " + (A.Age - B.Age) + " years. "
+    const resultPersonBIsOlder = B.Name + " is older than " + A.Name + "  by " + (B.Age - A.Age) + " years. "
+    
+    if (personAIsOlder == true) return resultPersonAIsOlder; 
+    return resultPersonBIsOlder;
+}
+
+console.log(whoIsOlder(personA, personB))
+
+
 function biography(person) {
     return "Hi, " + " my name is " + person.Name + ". I am " + person.Age + " years old. " + " I live in " + person.Location + " ,and I like " + person.Likes;
 }
